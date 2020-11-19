@@ -84,9 +84,11 @@ class Helix3Menu {
 
 			switch ($item->type) {
 				case 'separator':
+				break;
+
 				case 'heading':
 				// No further action needed.
-			break;
+				break;
 
 				case 'url':
 				if ((strpos($item->link, 'index.php?') === 0) && (strpos($item->link, 'Itemid=') === false)) {
