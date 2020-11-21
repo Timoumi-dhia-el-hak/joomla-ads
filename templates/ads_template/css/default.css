@@ -826,7 +826,7 @@ div.sp-module .sp-module-title {
  } 
 }
 body.com-users #sp-component {
-    padding: 40px 70px 70px 70px;
+  /*  padding: 40px 70px 70px 70px;*/
 }
 /* Improve sub menu dropdown clickable for offcanvas menu */
 .offcanvas-menu .offcanvas-inner .sp-module ul > li .offcanvas-menu-toggler.collapsed .open-icon,
