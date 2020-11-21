@@ -694,7 +694,8 @@ div.sp-module .sp-module-title {
 }
 /* Bottom */
 #sp-bottom {
-    background-color:/*#7ac8ff !important;#13314c*/
+    background-color:#98a1a9!important;
+    padding: 10px 0px  !important;
 }
 #sp-bottom p {
     color: #ffffff;
