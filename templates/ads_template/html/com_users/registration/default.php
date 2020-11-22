@@ -20,8 +20,9 @@ JHtml::_('behavior.formvalidation');
 			<?php endif; ?>
 
 			<form id="member-registration" action="<?php echo JRoute::_('index.php?option=com_users&task=registration.register'); ?>" method="post" class="form-validate" enctype="multipart/form-data">
-
-				<?php foreach ($this->form->getFieldsets() as $fieldset): // Iterate through the form fieldsets and display each one.?>
+			<?php $fieldsets = $this->form->getFieldsets();?>
+			<?php $fieldsets = array_reverse($fieldsets); ?>
+			<?php foreach ($fieldsets as $fieldset): // Iterate through the form fieldsets and display each one.?>
 					<?php $fields = $this->form->getFieldset($fieldset->name);?>
 					<?php if (count($fields)):?>
 						<?php foreach ($fields as $field) :// Iterate through the fields in the set and display them.?>
