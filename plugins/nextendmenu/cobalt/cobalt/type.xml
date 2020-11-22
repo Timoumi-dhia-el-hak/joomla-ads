@@ -1,0 +1,45 @@
+<root translate="accordionmenu">
+    <params label="Cobalt_menu_properties">
+        <param name="cobaltmenu" type="cobaltsectionswithcategories" default="1|*|0" label="Menu" description="If_you_select_only_one_root_menu_item__" >
+            <param type="cobaltsections" label="Section" />
+            <param type="cobaltcategories" label="Categories" multiple="1" size="10" />
+        </param>
+        <param name="rootasitem" type="onoff" default="0" label="Singe_root_as_menuitem" description="If_enabled_and_one_selected_in_the_previous__"/>
+        <param name="showproducts" type="onoff" default="0" label="Show_records" description="If_enabled_the_records_are_shown_in_the_categories"/>
+        <param name="displaynum" type="radio" default="0" label="isplay_number_of_records" description="isplay_the_record_count_available_in_a_category_if_any">
+            <option value="0">o</option>
+            <option value="1">Yes_the_real_count</option>
+            <option value="2">Yes_the_aggregated_count</option>
+        </param>
+        <param name="emptycategory" type="onoff" default="1" label="Show_empty_categories" />
+        <param name="order" type="radio" label="Order" default="0">
+            <option value="0">Components_default</option>
+            <option value="asc">Ascending</option>
+            <option value="desc">escending</option>
+        </param>
+        <param name="recordorder" type="list" label="Record_order" default="0">
+            <option value="0">Ordering</option>
+            <option value="asc">ame__ascending</option>
+            <option value="desc">ame__descending</option>
+            <option value="hitsasc">Hits__ascending</option>
+            <option value="hitsdesc">Hits__descending</option>
+            <option value="commentsasc">Comments__ascending</option>
+            <option value="commentsdesc">Comments__descending</option>
+            <option value="featured">Featured__first</option>
+        </param>
+        <param name="menuicons" type="mixed" label="Menu_icons" default="0|*|0|*|0" description="If_enabled_the_menu_will_look_for_icons_in_the_description_of_the_category_and_the_first_image_will_be_used">
+            <param type="onoff" label="Show"/>
+            <param type="radio" label="Alignment">
+                <option value="0">Left</option>
+                <option value="1">Right</option>
+            </param>
+            <param type="onoff" label="Only_icon"/>
+        </param>
+        <param name="cobaltcache" type="mixed" label="Caching" default="1|*|300000">
+            <param type="onoff" label="Caching"/>
+            <param type="text" label="Lifetime">
+              <unit>min</unit>
+            </param>
+        </param>
+    </params>
+</root>

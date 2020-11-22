@@ -1,0 +1,47 @@
+<root translate="accordionmenu">
+    <params label="EasyBlog_menu_properties">
+        <param type="easyblogmenuitems" name="root" default="0" label="Menu_root" multiple="1" size="10" description="If_you_select_only_one_root_menu_item__" />
+        <param name="rootasitem" type="onoff" default="0" label="Singe_root_as_menuitem" description="If_enabled_and_one_selected_in_the_previous__"/>
+        <param name="showproducts" type="onoff" default="0" label="Show_posts" description="If_enabled_posts_are_included_in_the_menu"/>
+        <param name="displaynum" type="radio" default="0" label="Display_number_of_posts" description="Display_the_post_count_available__">
+            <option value="0">No</option>
+            <option value="1">Yes_the_real_count</option>
+            <option value="2">Yes_the_aggregated_count</option>
+        </param>
+        <param name="emptycategory" type="onoff" default="1" label="Show_empty_categories" />
+
+        <param name="Itemid" type="text" default="0" label="Itemid" />
+        
+		<param type="mixed" label="Category order" name="order_cats" default="0|*|asc">
+			<param type="list" label="Order">
+				<option value="0">Component's default</option>
+				<option value="cat.title">Alphabetic</option>
+			</param>
+			<param type="switcher" label="Direction">
+				<unit value="asc">Ascending</unit>
+				<unit value="desc">Descending</unit>
+			</param>
+		</param>
+		
+		<param type="mixed" label="Entry order" name="order_posts" default="0|*|asc">
+			<param type="list" label="Order">
+				<option value="0">Component's default</option>
+				<option value="post.title">Alphabetic</option>
+			   <option value="post.date">Publication time</option>
+			   <option value="post.mod">Last modified</option>
+			</param>
+			<param type="switcher" label="Direction">
+				<unit value="asc">Ascending</unit>
+				<unit value="desc">Descending</unit>
+			</param>
+		</param>
+		
+		
+        <param name="easyblogcache" type="mixed" label="Caching" default="1|*|300000">
+            <param type="onoff" label="Caching"/>
+            <param type="text" label="Lifetime">
+              <unit>min</unit>
+            </param>
+        </param>
+    </params>
+</root>

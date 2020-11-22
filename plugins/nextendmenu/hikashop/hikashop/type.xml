@@ -1,0 +1,32 @@
+<root translate="accordionmenu">
+    <params label="HikaShop_menu_properties">
+        <param name="itemid" type="text" default="0" label="Itemid" description="Itemid_to_use_for_the_categories" />
+        <param type="hikashopmenuitems" name="root" default="1" label="Menu_root" multiple="1" size="10" description="If_you_select_only_one_category_only__" />
+        <param name="rootasitem" type="onoff" default="0" label="Singe_root_as_menuitem" description="If_enabled_and_one_selected_in_the_previous__"/>
+        <param name="showproducts" type="onoff" default="0" label="Show_products" description="If_enabled_products_are_included_in_the_menu"/>
+        <param name="onlyproducts" type="onoff" default="0" label="Show only products" description="Show only products, when the Show products is turned on too."/>
+        <param name="displaynum" type="radio" default="0" label="Display_number_of_products" description="Display_the_product_count__">
+            <option value="0">o</option>
+            <option value="1">Yes_the_real_count</option>
+            <option value="2">Yes_the_aggregated_count</option>
+        </param>
+        <param name="emptycategory" type="onoff" default="1" label="Show_empty_categories" />
+        <param name="order" type="radio" label="Order" default="0">
+            <option value="0">Components_default</option>
+            <option value="asc">Ascending</option>
+            <option value="desc">Descending</option>
+        </param>
+        <param name="menuicons" type="mixed" label="Menu_icons" default="0|*|0|*|0" description="If_enabled_the_menu_will_look_for_icons_in_the_description_of_the_category_and_the_first_image_will_be_used">
+            <param type="onoff" label="Show" />
+            <param type="radio" label="Alignment" >
+                <option value="0">Left</option>
+                <option value="1">Right</option>
+            </param>
+            <param type="onoff" label="Only_icon" />
+        </param>
+        <param name="links" type="mixed" label="Links" default="0|*|1">
+            <param name="productview" type="onoff" default="0" label="Product view links" description="The link will lead to the product view."/>
+            <param name="categoryp" type="onoff" default="1" label="Include categoryp"/>
+        </param>
+    </params>
+</root>

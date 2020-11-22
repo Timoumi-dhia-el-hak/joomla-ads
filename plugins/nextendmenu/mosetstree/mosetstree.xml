@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="1.5" type="plugin" group="nextendmenu" method="upgrade">
+    <name>Nextend Menu for Mosets Tree</name>
+    <author>Gabor Racz</author>
+    <creationDate>2016</creationDate>
+    <copyright>Copyright (C) 2016 nextendweb.com. All rights reserved.</copyright>
+    <license>GNU General Public License</license>
+    <authorEmail>gabor@nextendweb.com</authorEmail>
+    <authorUrl>http://www.nextendweb.com</authorUrl>
+    <version>1.0.0</version>
+    <description></description>
+    <files>
+        <filename plugin="mosetstree">mosetstree.php</filename>
+        <filename>index.html</filename>
+        <folder>mosetstree</folder>
+    </files>
+    <params>
+    </params>
+</extension>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="3.2" client="site" method="upgrade">
+	<name>WS Register</name>
+	<author>WS-Theme.com</author>
+	<creationDate>10/2012</creationDate>
+	<copyright>Copyright (C) 2012. All rights reserved.</copyright>
+	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+	<authorEmail>info@ws-theme.com</authorEmail>
+	<authorUrl>www.ws-theme.com</authorUrl>
+	<version>1.1</version>
+	<description>WS Register is a simple and flexible Joomla Register Module with some nice options. It's build on the native Joomla Registering and has very lightweight code</description>
+	
+	<files>
+		<filename module="mod_wsregister">mod_wsregister.php</filename>
+		<filename module="mod_wsregister">mod_wsregister.xml</filename>
+		<filename>index.html</filename>
+		<folder>admin</folder>
+		<folder>tmpl</folder>
+	</files>
+	
+	<config>
+		<fields name="params">
+			<fieldset name="wsreg_basic" label="Basic Settings" addfieldpath="/modules/mod_wsregister/admin/elements">
+				
+				<field name="wsreg_head1" type="wsheadline" label="Translation" />
+        <field name="wsreg_intro1" type="wstext" label="Here you can enter the Placeholders for the fields. But remember, the Placeholder is made with the HTML5 Placeholder Attribute, so maybe it will not work in older Browsers" />
+        <field name="wsline1" type="wsline" />
+				
+				<field name="text_name" type="text" default="Name" label="Name" description="" />
+				
+				<field name="text_username" type="text" default="Username" label="Username" description="" />
+				
+				<field name="text_password" type="text" default="Password" label="Password" description="" />
+				
+				<field name="text_password_confirm" type="text" default="Password" label="Confirm Password" description="" />
+				
+				<field name="text_email" type="text" default="E-Mail" label="E-Mail" description="" />
+				
+				<field name="text_email_confirm" type="text" default="Confirm E-Mail" label="Confirm E-Mail" description="" />
+				
+				<field name="text_register" type="text" default="Register" label="Register" description="" />
+				
+				<field name="wsreg_head2" type="wsheadline" label="Styling" />
+        <field name="wsreg_intro2" type="wstext" label="Here you can enter optional CSS Classes for the Input Fields and the Buttons, this can be useful when you have already some styles inside your Template for this." />
+        <field name="wsline2" type="wsline" />
+				
+				<field name="wsreg_inputclass" type="text" default="" label="CSS Class Input" description="" />
+				
+				<field name="wsreg_btnclass" type="text" default="btn btn-default" label="CSS Class Button" description="" />
+				
+				<field name="wsreg_head3" type="wsheadline" label="Intro and Outro" style="ws-line" />
+        <field name="wsreg_intro3" type="wstext" label="Here you can enter a optional Intro or Outro Text, feel free to use any HTML you want to have above or below the Module" style="ws-text" />
+				<field name="wsline3" type="wsline" />
+				
+				<field name="text_intro" type="editor" label="Introtext" default=""  description="" filter="raw" />
+				
+				<field name="text_outro" type="editor" label="Outrotext" default=""  description="" filter="raw" />
+				
+				<field name="wsreg_head4" type="wsheadline" label="Advanced" />
+				
+				<field name="moduleclass_sfx" type="text" default="" label="Module Class Suffix" description="Enter an Module Class Suffix to style this Module in an Extra Way" />	
+				
+				<field name="cache" type="hidden" default="0"/>
+				
+				<field name="useCache" type="radio" class="btn-group" default="1" label="Use Cache" description="Should the Cache for this Module turned on?"><option value="1">Yes</option><option value="0">No</option></field>
+				
+				<field name="cacheTime" type="text" default="10" label="Cache Time" description="Set the Time in Minutes"/>
+				
+				<field name="wsline4" type="wsline" />
+
+				<field type="asset" path="/modules/mod_wsregister/admin/" />	
+			
+			</fieldset>	
+			
+		</fields>
+	</config>	
+
+</extension>

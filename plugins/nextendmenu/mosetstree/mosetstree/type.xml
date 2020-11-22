@@ -1,0 +1,21 @@
+<root translate="accordionmenu">
+    <params label="Mosets tree menu properties">
+        <param type="mosetstreecategories" name="root" default="0" label="Menu_root" multiple="1" size="10"
+               description="If_you_select_only_one_category_only__"/>
+        <param name="rootasitem" type="onoff" default="0" label="Single root as menuitem"
+               description="Include selected root into menu"/>
+        <param name="selectedroot" type="onoff" default="0" label="Selected subcategory to root"
+               description="If you select a menuitem, and you also select from it's submenuitems, then you can make the submenuitems to be first level items too. (This would be the obvious behaviour, but it needs extra codes, that is why this option was made.)"/>
+        <param name="displaynum" type="onoff" default="0" label="Display submenu count"
+               description="You can show the number of all submenus inside the category. This includes all lower level subcategory. This is how many actual subcategories are, not just how much do you make our menu show, in case you are using the 'selected subcategory to root' option."/>
+        <param name="itemid" type="text" default="0" label="Itemid" description="Itemid_to_use_for_the_categories" />
+        <param name="menuicons" type="mixed" label="Menu_icons" default="0|*|0|*|0" description="You can show the chosen image of your category next to it's name.">
+            <param type="onoff" label="Show"/>
+            <param type="radio" label="Alignment">
+                <option value="0">Left</option>
+                <option value="1">Right</option>
+            </param>
+            <param type="onoff" label="Only_icon" />
+        </param>
+    </params>
+</root>

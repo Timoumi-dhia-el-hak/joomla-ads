@@ -1,0 +1,39 @@
+<root translate="accordionmenu">
+  <params label="Zoo_menu_properties">
+    <param name="zoomenu" type="zooappswithcategories" default="1|*|0" label="Menu" description="If_you_select_only_one_root_menu_item__" >
+        <param type="zooapps" label="App" />
+        <param type="zoocategories" label="Categories" multiple="1" size="10" />
+    </param>
+    <param name="rootasitem" type="onoff" default="0" label="Singe_root_as_menuitem" description="If_enabled_and_one_selected_in_the_previous__"/>
+	<param name="showproducts" type="onoff" default="0" label="Show_posts" description="If_enabled_posts_are_included_in_the_menu"/>
+    <param name="displaynum" type="onoff" default="0" label="Display_number_of_items" description="Display_the_item_count_for_a_parent_item" />
+    <param name="menuicons" type="mixed" label="Menu_icons" default="0|*|0|*|0" description="If_enabled_the_menu_will_add_the_specified_image_from_the_menu_item">
+        <param type="onoff" label="Show" />
+        <param type="radio" label="Alignment" >
+            <option value="0">Left</option>
+            <option value="1">Right</option>
+        </param>
+        <param type="onoff" label="Only_icon" />
+    </param>
+	
+	<param type="mixed" label="Entry order" name="order_posts" default="0|*|asc">
+		<param type="list" label="Order">
+			<option value="0">Component's default</option>
+			<option value="post.title">Alphabetic</option>
+		   <option value="post.date">Publication time</option>
+		   <option value="post.mod">Last modified</option>
+		</param>
+		<param type="switcher" label="Direction">
+			<unit value="asc">Ascending</unit>
+			<unit value="desc">Descending</unit>
+		</param>
+	</param>
+
+	<param name="zoocache" type="mixed" label="Caching" default="1|*|300000">
+            <param type="onoff" label="Caching"/>
+            <param type="text" label="Lifetime">
+              <unit>min</unit>
+            </param>
+        </param>
+  </params>
+</root>

@@ -8,3 +8,6 @@
 2020-11-16T10:30:15+00:00	INFO ::1	joomlafailure	Username and password do not match or you do not have an account yet.
 2020-11-16T10:30:23+00:00	INFO ::1	joomlafailure	Username and password do not match or you do not have an account yet.
 2020-11-16T10:30:42+00:00	INFO ::1	joomlafailure	Username and password do not match or you do not have an account yet.
+2020-11-22T01:47:47+00:00	INFO ::1	joomlacanceled	
+2020-11-22T01:50:23+00:00	INFO ::1	joomlacanceled	
+2020-11-22T01:54:23+00:00	INFO ::1	joomlafailure	Le nom d'utilisateur ne correspond pas au mot de passe, ou vous n'avez pas encore de compte.

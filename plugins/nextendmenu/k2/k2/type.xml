@@ -1,0 +1,34 @@
+<root translate="accordionmenu">
+    <params label="K2_menu_properties">
+        <param type="k2menuitems" name="root" default="0" label="Menu_root" multiple="1" size="10" description="If_you_select_only_one_category_only__" />
+        <param name="rootasitem" type="onoff" default="0" label="Singe_root_as_menuitem" description="If_enabled_and_one_selected_in_the_previous__"/>
+        <param name="showproducts" type="onoff" default="0" label="Show_items" description="If_enabled_items_are_included_in_the_menu"/>
+        <param name="maxitemsincat" type="text" default="20" label="Max_items_per_Category" description="Used_if_Show_items_enabled_0_means_unlimited" />
+        <param name="displaynum" type="radio" default="0" label="Display_number_of_subitems" description="Display_the_item_count_for_a_parent_item">
+            <option value="0">No</option>
+            <option value="1">Yes_the_real_count</option>
+            <option value="2">Yes_the_aggregated_count</option>
+        </param>
+        <param name="emptycategory" type="onoff" default="1" label="Show_empty_categories" />
+        <param name="order" type="radio" label="Order" default="0">
+            <option value="0">Components_default</option>
+            <option value="asc">Ascending</option>
+            <option value="desc">Descending</option>
+        </param>
+        <param name="orderitems" type="radio" label="Order_items" default="0">
+            <option value="0">Components_default</option>
+            <option value="asc">Title_ascending</option>
+            <option value="desc">Title_descending</option>
+            <option value="dateasc">Date_ascending</option>
+            <option value="datedesc">Date_descending</option>
+        </param>
+        <param name="menuicons" type="mixed" label="Menu_icons" default="0|*|0|*|0" description="If_enabled_the_menu_will_add_the_specified_image_from_the_menu_item">
+            <param type="onoff" label="Show" />
+            <param type="radio" label="Alignment">
+                <option value="0">Left</option>
+                <option value="1">Right</option>
+            </param>
+            <param type="onoff" label="Only_icon" />
+        </param>
+    </params>
+</root>
