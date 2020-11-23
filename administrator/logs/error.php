@@ -11,3 +11,5 @@
 2020-11-22T01:47:47+00:00	INFO ::1	joomlacanceled	
 2020-11-22T01:50:23+00:00	INFO ::1	joomlacanceled	
 2020-11-22T01:54:23+00:00	INFO ::1	joomlafailure	Le nom d'utilisateur ne correspond pas au mot de passe, ou vous n'avez pas encore de compte.
+2020-11-22T16:00:30+00:00	INFO ::1	joomlafailure	Le nom d'utilisateur ne correspond pas au mot de passe, ou vous n'avez pas encore de compte.
+2020-11-23T11:39:57+00:00	INFO ::1	joomlacanceled	
