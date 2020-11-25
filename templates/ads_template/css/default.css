@@ -1,6 +1,6 @@
 /* Title */
 #sp-top-bar {
-    background-color:#012f61!important;
+    background-color:#012f61;
 }
 #sp-main-body {
   padding: 0!important;
@@ -10,7 +10,7 @@
 }
 body.itemid-437 #sp-header,
 #sp-header {
-    background: #2d79c4!important;
+    background: #2d79c4;
 }
 #offcanvas-toggler >i {
     color: #ffffff;
@@ -694,7 +694,7 @@ div.sp-module .sp-module-title {
 }
 /* Bottom */
 #sp-bottom {
-    background-color:#98a1a9!important;
+    background-color:#98a1a9;
     padding: 10px 0px  !important;
 }
 #sp-bottom p {
