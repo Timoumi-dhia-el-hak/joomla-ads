@@ -113,7 +113,7 @@ class ThumbnailBasicFrontend extends AbstractWidgetFrontend {
             if (!empty($thumbnailStyle) && !empty($thumbnailStyle->data[0]->extra)) {
                 $extraCSS      = $thumbnailStyle->data[0]->extra;
                 $thumbnailCode = '';
-                foreach ($thumbnailCSS AS $css) {
+                foreach ($thumbnailCSS as $css) {
                     $currentCode = $this->getStringBetween($extraCSS, $css . ':', ';');
                     if (!empty($currentCode)) {
                         $thumbnailCode .= $css . ':' . $currentCode . ';';
@@ -139,7 +139,6 @@ class ThumbnailBasicFrontend extends AbstractWidgetFrontend {
         }
 
         if ($showTitle) {
-            $slider->exposeSlideData['title'] = true;
             $parameters['title']              = array(
                 'font' => $slider->addFont($params->get($this->key . 'title-font'), 'simple'),
             );
@@ -215,14 +214,14 @@ class ThumbnailBasicFrontend extends AbstractWidgetFrontend {
                 $nextStyle .= 'transform:none;';
             }
 
-            $previous = Html::image($arrowImagePrevious, $slider->params->get($this->key . 'arrow-prev-alt', 'previous arrow'), array(
+            $previous = Html::image($arrowImagePrevious, $slider->params->get($this->key . 'arrow-prev-alt', 'previous arrow'), Html::addExcludeLazyLoadAttributes(array(
                 'class' => 'nextend-thumbnail-button nextend-thumbnail-previous n2-ow',
                 'style' => $previousStyle
-            ));
-            $next     = Html::image($arrowImageNext, $slider->params->get($this->key . 'arrow-next-alt', 'next arrow'), array(
+            )));
+            $next     = Html::image($arrowImageNext, $slider->params->get($this->key . 'arrow-next-alt', 'next arrow'), Html::addExcludeLazyLoadAttributes(array(
                 'class' => 'nextend-thumbnail-button nextend-thumbnail-next n2-ow n2-active',
                 'style' => $nextStyle
-            ));
+            )));
         }
 
         if ($params->get($this->key . 'position-mode') == 'simple' && $orientation == 'vertical') {

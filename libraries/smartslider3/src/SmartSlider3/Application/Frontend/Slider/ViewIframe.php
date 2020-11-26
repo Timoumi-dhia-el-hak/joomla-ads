@@ -35,8 +35,10 @@ class ViewIframe extends AbstractView {
 
         $slider = $sliderManager->getSlider();
 
-        $this->sliderID = $slider->sliderId;
-        $this->isGroup  = $slider->isGroup();
+        if ($slider) {
+            $this->sliderID = $slider->sliderId;
+            $this->isGroup  = $slider->isGroup();
+        }
 
         setlocale(LC_NUMERIC, $locale);
 

@@ -90,7 +90,6 @@ class ViewSlidesEdit extends AbstractView {
         $this->frontendSlider                           = new AdminSlider($this->MVCHelper, Request::$GET->getInt('sliderid'), array(
             'disableResponsive' => true
         ));
-        $this->frontendSlider->exposeSlideData['title'] = true;
         $this->frontendSlider->setEditedSlideID($this->getSlideID());
         $this->frontendSlider->initSlider();
         $this->frontendSlider->initSlides();

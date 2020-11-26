@@ -25,8 +25,6 @@ class BulletTransitionFrontend extends AbstractBulletFrontend {
             return '';
         }
 
-        $slider->exposeSlideData['title'] = true;
-
         $slider->addLess(self::getAssetsPath() . '/style.n2less', array(
             "sliderid" => $slider->elementId
         ));

@@ -133,7 +133,7 @@ class ItemYouTubeFrontend extends AbstractItemFrontend {
             'class'             => 'n2_ss_video_player n2-ow-all',
             'data-aspect-ratio' => $aspectRatio,
             "style"             => 'background: URL(' . ResourceTranslator::toUrl($this->data->getIfEmpty('image', '$ss3-frontend$/images/placeholder/video.png')) . ') no-repeat 50% 50%; background-size: cover;'
-        ), '<div class="n2_ss_video_player__placeholder" ' . $style . '></div>' . ($this->data->get('playbutton', 1) ? '<div class="n2_ss_video_player__cover">' . Html::image(Image::SVGToBase64('$ss3-frontend$/images/play.svg')) . '</div>' : ''));
+        ), '<div class="n2_ss_video_player__placeholder" ' . $style . '></div>' . ($this->data->get('playbutton', 1) ? '<div class="n2_ss_video_player__cover">' . Html::image(Image::SVGToBase64('$ss3-frontend$/images/play.svg'), 'Play', Html::addExcludeLazyLoadAttributes()) . '</div>' : ''));
 
     }
 

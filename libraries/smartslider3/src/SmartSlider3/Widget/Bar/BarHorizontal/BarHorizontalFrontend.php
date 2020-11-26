@@ -52,9 +52,7 @@ class BarHorizontalFrontend extends AbstractWidgetFrontend {
         }
 
         $showTitle = intval($params->get($this->key . 'show-title'));
-        if ($showTitle) {
-            $slider->exposeSlideData['title'] = true;
-        }
+
         $showDescription = intval($params->get($this->key . 'show-description'));
         if ($showDescription) {
             $slider->exposeSlideData['description'] = true;

@@ -83,7 +83,7 @@ class Slider extends AbstractRenderable {
     private $sliderRow;
 
     public $exposeSlideData = array(
-        'title'         => false,
+        'title'         => true,
         'description'   => false,
         'thumbnail'     => false,
         'thumbnailType' => false,

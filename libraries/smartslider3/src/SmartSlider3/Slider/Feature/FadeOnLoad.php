@@ -109,16 +109,16 @@ class FadeOnLoad {
 
 
     private function makeImage($sizes) {
-        $html = Html::image("data:image/svg+xml;base64," . $this->transparentImage($sizes['width'] + $sizes['marginHorizontal'], $sizes['height']), 'Slider', array(
+        $html = Html::image("data:image/svg+xml;base64," . $this->transparentImage($sizes['width'] + $sizes['marginHorizontal'], $sizes['height']), 'Slider', Html::addExcludeLazyLoadAttributes(array(
             'style' => 'width: 100%; max-width:' . ($this->slider->features->responsive->maximumSlideWidth + $sizes['marginHorizontal']) . 'px; display: block;opacity:0;margin:0px;',
             'class' => 'n2-ow'
-        ));
+        )));
 
         if ($sizes['marginVertical'] > 0) {
-            $html .= Html::image("data:image/svg+xml;base64," . $this->transparentImage($sizes['width'] + $sizes['marginHorizontal'], $sizes['marginVertical']), 'Slider', array(
+            $html .= Html::image("data:image/svg+xml;base64," . $this->transparentImage($sizes['width'] + $sizes['marginHorizontal'], $sizes['marginVertical']), 'Slider', Html::addExcludeLazyLoadAttributes(array(
                 'style' => 'width: 100%;margin:0px;',
                 'class' => 'n2-ow'
-            ));
+            )));
         }
 
         return $html;
