@@ -1,26 +1,24 @@
-
-@media (max-width: 480px){
+/*
+*/
+@media  (max-width: 1023px) {
   .adsmanager-grid {
     width: 100%;
     height: 255px;
 }
+#catselection{
+  display:none
 }
-@media(min-width:1200px){
-/*adsmanagergrid*/
-.adsmanager-grid h4 {
-  margin-bottom: 5px;
-  padding: 5px;
-  background-color: #ffffff;
-  -webkit-border-top-left-radius: 4px;
-  -webkit-border-top-right-radius: 4px;
-  -moz-border-radius-topleft: 4px;
-  -moz-border-radius-topright: 4px;
-  border-top-left-radius: 4px;
-  border-top-right-radius: 4px;
+#sp-left{
+  display:none
 }
-.adsmanager-grid a {
-  color: #000000;
+
 }
+@media (min-width: 1024px){
+  /*mobile menu disable*/
+#offcanvas-toggler{
+  display:none;
+}
+ /*adsmanagergrid*/
 .adsmanager-grid {
   width: 32%;
   margin-left: 10px;
@@ -36,6 +34,7 @@
   height: 300px;
 }
 }
+
 /*logo*/
 #sp-header .logo {
     width: 40%;
@@ -89,3 +88,18 @@
 .breadcrumb {
     background-color: #fff;
  }
+/*adsmanagergrid*/
+.adsmanager-grid h4 {
+  margin-bottom: 5px;
+  padding: 5px;
+  background-color: #ffffff;
+  -webkit-border-top-left-radius: 4px;
+  -webkit-border-top-right-radius: 4px;
+  -moz-border-radius-topleft: 4px;
+  -moz-border-radius-topright: 4px;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+}
+.adsmanager-grid a {
+  color: #000000;
+}

@@ -39,7 +39,7 @@ else
                         <?php else : ?>
                             <label class="control-label" for="catid"><?php echo $searchLabel ?></label>
                         <?php endif; ?>
-                        <div class="controls">
+                        <div class="controls "id="catselection">
                             <?php
                             switch (@$conf->single_category_selection_type) {
                                 default:
