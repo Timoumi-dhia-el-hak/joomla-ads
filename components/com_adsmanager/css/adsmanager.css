@@ -689,12 +689,12 @@ input.error {
 
 /**
  * MOD SEARCH FIX
- **/
+
 #modsimplesearch-form input,
 #modsimplesearch-form select {
     width: 100%;
 }
-
+ **/
 .popup-link {
     text-decoration: none;
     display: block;
