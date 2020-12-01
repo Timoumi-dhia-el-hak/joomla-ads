@@ -3,13 +3,19 @@
 #modsimplesearch-form{
   display: flex;
 }
-@media (max-width: 768px){
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape){
 .login{
     width: 200%;
 }
 .registration{
   width: 200%;
 }
+#sp-header i.fa-bars,
+#offcanvas-toggler,
+#sp-header #offcanvas-toggler i.fa-bars,
+#offcanvas-toggler > i.fa {display: none !important; font-size:0; padding:0;}
+
+#sp-menu .sp-megamenu-parent.hidden-sm.hidden-xs {display: block !important;}
 }
 
 @media  (max-width: 1023px) {
@@ -173,9 +179,11 @@
 #sp-bottom4{
   margin: 10px 0px 0px 0px;
 }
-.offcanvas-menu {
-  background-color:#0000;
+.offcanvas-menu 
+{ background-color: #fff; 
+  color: #000;
 }
+.offcanvas-inner .sp-module ul > li > a:hover { color: #000; }
 .offcanvas-menu .offcanvas-inner .sp-module ul > li a {
   color: #000
 }
@@ -183,3 +191,6 @@
    border: 1px solid #000;
   color: #000;
 }
+#offcanvas-toggler > i {
+  font-size:30px;
+   z-index:999; }
