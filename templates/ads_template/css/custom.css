@@ -1,8 +1,16 @@
-/*
-*/
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+
+@media(max-width:425px){
+  
+  }*/
+
 #modsimplesearch-form{
   display: flex;
+  
 }
+
 @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape){
 .login{
     width: 200%;
@@ -16,6 +24,16 @@
 #offcanvas-toggler > i.fa {display: none !important; font-size:0; padding:0;}
 
 #sp-menu .sp-megamenu-parent.hidden-sm.hidden-xs {display: block !important;}
+#sp-search {
+  padding: 0px 10px;
+}
+#modsimplesearch-form input, #modsimplesearch-form select {
+  width: 250px;
+}
+}
+
+#sp-header .logo {
+  width: 100%; 
 }
 
 @media  (max-width: 1023px) {
@@ -38,6 +56,11 @@
 
 }
 @media (min-width: 1024px){
+  #modsimplesearch-form input, #modsimplesearch-form select {
+    border-radius: 0px;
+    width: 150px;
+    height: 35px;
+}
   /*mobile menu disable*/
 #offcanvas-toggler{
   display:none;
@@ -60,37 +83,15 @@
 .login{
   width: 100%;
 }
-}
 /*logo*/
 #sp-header .logo {
   width: 40%;
 }
-@media(max-width:425px){
-  /*logo*/
-#sp-header .logo {
-  width: 100%;
+#sp-search{
+  padding: 5px 0px;
+ 
 }
-
-  #sp-menu{
-    padding-left: 0px;
-  }
-  /*logo*/
-  #sp-logo {
-   width: 30%;
-    padding: 0px;
-  }
-  #modsimplesearch-form input{
-    border-radius: 0px;
-    width: 150px;
-    height: 35px;
-  }
-  .login{
-    width: 100%;
-  }
-  .registration{
-  width: 100%;
-  }
-  }
+}
   /*search box*/
 #sp-module-content .modsimplesearch-form{
   background: rgba(255, 255, 255, 0);
@@ -107,11 +108,7 @@
 #adsmanager_search_filed{
   display: flex;
     }
-#modsimplesearch-form input, #modsimplesearch-form select {
-    border-radius: 0px;
-    width: 150px;
-    height: 35px;
-}
+
 .btn-search{
   height: 35px;
   white-space: nowrap;
@@ -194,3 +191,48 @@
 #offcanvas-toggler > i {
   font-size:30px;
    z-index:999; }
+   @media (min-width: 320px) and (max-width: 480px) {
+    #sp-header {
+      height: 0px;
+    }
+    .juloawrapper{
+      float: right;
+    }
+    #sp-logo {
+         width: 40%;
+         padding: 10px 0px;
+     }
+     /*logo*/
+   #sp-header .logo {
+     width: 100%;
+   }
+   
+     #sp-menu{
+       padding-left: 0px;
+     }
+     #adsmanager_search_filed{
+       display: flex;
+     align-items: center;
+     justify-content: center;
+         }
+     
+     #modsimplesearch-form input{
+       border-radius: 0px;
+       width: 230px;
+       height: 35px;
+     }
+     .login{
+       width: 100%;
+     }
+     .registration{
+     width: 100%;
+     }
+   }
+   .favmenu{
+    font-weight: bold
+   }
+   #imagesupload_browse {
+    color: #fff;
+    background-color: #007084;
+    border-color: #007084;
+}
