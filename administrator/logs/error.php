@@ -13,3 +13,5 @@
 2020-11-22T01:54:23+00:00	INFO ::1	joomlafailure	Le nom d'utilisateur ne correspond pas au mot de passe, ou vous n'avez pas encore de compte.
 2020-11-22T16:00:30+00:00	INFO ::1	joomlafailure	Le nom d'utilisateur ne correspond pas au mot de passe, ou vous n'avez pas encore de compte.
 2020-11-23T11:39:57+00:00	INFO ::1	joomlacanceled	
+2020-12-02T17:54:47+00:00	INFO ::1	unknownerror	Could not create a new user on our site: Une erreur est survenue lors de l'envoi de l'e-mail de notification d'activation
+2020-12-02T18:54:35+00:00	INFO ::1	unknownerror	Could not create a new user on our site: Une erreur est survenue lors de l'envoi de l'e-mail de notification d'activation

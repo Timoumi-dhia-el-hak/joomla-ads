@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~  @package   AkeebaSocialLogin
+  ~  @copyright Copyright (c)2016-2020 Nicholas K. Dionysopoulos / Akeeba Ltd
+  ~  @license   GNU General Public License version 3, or later
+  -->
+
+<extension version="3.8.0" type="plugin" group="system" method="upgrade">
+	<name>PLG_SYSTEM_SOCIALLOGIN</name>
+	<version>3.2.2</version>
+	<creationDate>2020-11-17</creationDate>
+
+	<author>Akeeba Ltd</author>
+	<authorEmail>no-reply@akeeba.com</authorEmail>
+	<authorUrl>https://www.akeeba.com</authorUrl>
+
+	<copyright>Copyright (c)2016-2019 Akeeba Ltd</copyright>
+	<license>GNU GPL v3 or later</license>
+
+	<description>PLG_SYSTEM_SOCIALLOGIN_DESCRIPTION</description>
+
+	<files>
+		<filename plugin="sociallogin">sociallogin.php</filename>
+		<folder>Features</folder>
+		<folder>fields</folder>
+		<folder>layout</folder>
+		<folder>Library</folder>
+		<folder>vendor</folder>
+	</files>
+
+	<media folder="media" destination="plg_system_sociallogin">
+		<folder>js</folder>
+	</media>
+
+	<languages folder="language">
+		<language tag="en-GB">en-GB/en-GB.plg_system_sociallogin.ini</language>
+		<language tag="en-GB">en-GB/en-GB.plg_system_sociallogin.sys.ini</language>
+	</languages>
+
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+
+				<field
+						name="j4buttons"
+						type="list"
+						label="PLG_SYSTEM_SOCIALLOGIN_CONFIG_J4BUTTONS_LABEL"
+						description="PLG_SYSTEM_SOCIALLOGIN_CONFIG_J4BUTTONS_DESC"
+						default="1"
+						class="btn-group btn-group-yesno"
+				>
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>
+
+				<field
+						name="loginmodules"
+						type="text"
+						label="PLG_SYSTEM_SOCIALLOGIN_CONFIG_LOGINMODULES_LABEL"
+						description="PLG_SYSTEM_SOCIALLOGIN_CONFIG_LOGINMODULES_DESC"
+						default="mod_login"
+				/>
+
+				<field
+						name="backendloginmodules"
+						type="text"
+						label="PLG_SYSTEM_SOCIALLOGIN_CONFIG_BACKENDLOGINMODULES_LABEL"
+						description="PLG_SYSTEM_SOCIALLOGIN_CONFIG_BACKENDLOGINMODULES_DESC"
+						default="none"
+				/>
+
+				<field
+						name="relocate"
+						type="list"
+						label="PLG_SYSTEM_SOCIALLOGIN_CONFIG_RELOCATE_LABEL"
+						description="PLG_SYSTEM_SOCIALLOGIN_CONFIG_RELOCATE_DESC"
+						default="1"
+						class="btn-group btn-group-yesno"
+				>
+					<option value="1">PLG_SYSTEM_SOCIALLOGIN_CONFIG_RELOCATE_OPT_NEXTTOLOGIN</option>
+					<option value="0">PLG_SYSTEM_SOCIALLOGIN_CONFIG_RELOCATE_OPT_ENDOFMODULE</option>
+				</field>
+
+				<field
+						name="interceptlogin"
+						type="radio"
+						label="PLG_SYSTEM_SOCIALLOGIN_CONFIG_INTERCEPTLOGIN_LABEL"
+						description="PLG_SYSTEM_SOCIALLOGIN_CONFIG_INTERCEPTLOGIN_DESC"
+						default="1"
+						class="btn-group btn-group-yesno"
+				>
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>
+
+			</fieldset>
+
+			<fieldset name="sociallogin_useraccount">
+				<field
+						name="linkunlinkbuttons"
+						type="radio"
+						label="PLG_SYSTEM_SOCIALLOGIN_CONFIG_LINKUNLINKBUTTONS_LABEL"
+						description="PLG_SYSTEM_SOCIALLOGIN_CONFIG_LINKUNLINKBUTTONS_DESC"
+						default="1"
+						class="btn-group btn-group-yesno"
+				>
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>
+
+				<field
+						name="show_dontremind"
+						type="radio"
+						label="PLG_SYSTEM_SOCIALLOGIN_CONFIG_SHOW_DONTREMIND_LABEL"
+						description="PLG_SYSTEM_SOCIALLOGIN_CONFIG_SHOW_DONTREMIND_DESC"
+						default="0"
+						class="btn-group btn-group-yesno"
+				>
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>
+			</fieldset>
+
+			<fieldset name="sociallogin_usergroups">
+				<field name="linkedAccountUserGroup" type="UserGroupList"
+					   checksuperusergroup="1"
+					   default=""
+					   label="PLG_SYSTEM_SOCIALLOGIN_LINKEDACCOUNTUSERGROUP_TITLE"
+					   description="PLG_SYSTEM_SOCIALLOGIN_LINKEDACCOUNTUSERGROUP_DESC"
+				>
+					<option value="0">PLG_SYSTEM_SOCIALLOGIN_LINKEDACCOUNTUSERGROUP_NOGROUP</option>
+				</field>
+
+				<field name="noLinkedAccountUserGroup" type="UserGroupList"
+					   checksuperusergroup="1"
+					   default=""
+					   label="PLG_SYSTEM_SOCIALLOGIN_NOLINKEDACCOUNTUSERGROUP_TITLE"
+					   description="PLG_SYSTEM_SOCIALLOGIN_NOLINKEDACCOUNTUSERGROUP_DESC"
+				>
+					<option value="0">PLG_SYSTEM_SOCIALLOGIN_LINKEDACCOUNTUSERGROUP_NOGROUP</option>
+				</field>
+
+			</fieldset>
+
+			<fieldset name="sociallogin_expert">
+				<field
+						name="relocate_selectors"
+						type="textarea"
+						label="PLG_SYSTEM_SOCIALLOGIN_CONFIG_RELOCATESELECTORS_LABEL"
+						description="PLG_SYSTEM_SOCIALLOGIN_CONFIG_RELOCATESELECTORS_DESC"
+						default='#form-login-submit > button, button[type=submit], [type=submit], [id*="submit"]'
+						class="input-xlarge"
+						cols="50"
+						rows="10"
+				/>
+
+			</fieldset>
+		</fields>
+	</config>
+
+	<!-- Installation script -->
+	<scriptfile>script.plg_system_sociallogin.php</scriptfile>
+</extension>

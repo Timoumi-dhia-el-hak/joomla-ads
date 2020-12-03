@@ -236,3 +236,33 @@
     background-color: #007084;
     border-color: #007084;
 }
+.akeeba-sociallogin-link-button-google, .akeeba-sociallogin-unlink-button-google, .akeeba-sociallogin-button-google {
+ margin: 0px 0px 5px 0px !important;
+ width: 100%;
+  text-shadow: none !important;
+  background-image: none !important;
+  border: none !important;
+  padding: 2px 8px 2px 2px !important;
+  height: 35px;
+  white-space: nowrap;
+  color: #fff;
+   cursor: pointer;
+  background: #f00505 !important;
+  transition: all .2s ease-out, color .2s ease-out;
+  border-color:#f00505 !important;
+}
+.akeeba-sociallogin-link-button-facebook, .akeeba-sociallogin-unlink-button-facebook, .akeeba-sociallogin-button-facebook {
+  background-color: #1877F2 !important;
+  color: #ffffff !important;
+  text-shadow: none !important;
+  background-image: none !important;
+  border: none !important;
+  width: 100%;
+  text-shadow: none !important;
+  background-image: none !important;
+  border: none !important;
+  padding: 2px 8px 2px 2px !important;
+  height: 35px;
+  white-space: nowrap;
+  margin: 5px 0px !important;
+}

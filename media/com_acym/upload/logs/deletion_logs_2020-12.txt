@@ -1,0 +1,19 @@
+user timoumi.dhia@yahoo.fr removed by timoumi.dhia88@gmail.com in:
+(1390) "C:\xampp\htdocs\annonces\administrator\components\com_acym\libraries\class.php => 146
+C:\xampp\htdocs\annonces\administrator\components\com_acym\libraries\class.php => 115
+C:\xampp\htdocs\annonces\administrator\components\com_acym\classes\user.php => 556
+C:\xampp\htdocs\annonces\administrator\components\com_acym\classes\user.php => 1040
+C:\xampp\htdocs\annonces\plugins\system\acymtriggers\acymtriggers.php => 51
+C:\xampp\htdocs\annonces\libraries\joomla\event\event.php => 70
+C:\xampp\htdocs\annonces\libraries\joomla\event\dispatcher.php => 160
+C:\xampp\htdocs\annonces\administrator\components\com_users\models\user.php => 367
+C:\xampp\htdocs\annonces\libraries\src\MVC\Controller\AdminController.php => 132
+C:\xampp\htdocs\annonces\libraries\src\MVC\Controller\BaseController.php => 710
+C:\xampp\htdocs\annonces\administrator\components\com_users\users.php => 21
+C:\xampp\htdocs\annonces\libraries\src\Component\ComponentHelper.php => 402
+C:\xampp\htdocs\annonces\libraries\src\Component\ComponentHelper.php => 377
+C:\xampp\htdocs\annonces\libraries\src\Application\AdministratorApplication.php => 101
+C:\xampp\htdocs\annonces\libraries\src\Application\AdministratorApplication.php => 159
+C:\xampp\htdocs\annonces\libraries\src\Application\CMSApplication.php => 196
+C:\xampp\htdocs\annonces\administrator\index.php => 51"
+
