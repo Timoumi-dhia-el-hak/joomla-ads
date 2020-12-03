@@ -15,12 +15,7 @@
     display: flex!important;
 }
 
-.login{
-    width: 200%;
-}
-.registration{
-  width: 200%;
-}
+
 #sp-header i.fa-bars,
 #offcanvas-toggler,
 #sp-header #offcanvas-toggler i.fa-bars,
@@ -53,7 +48,7 @@
 }
 @media (min-width: 1024px){
   .d-lg-block {
-    display: flex;
+    display: flex !important;
     flex-direction: row;
     align-items: center;
     place-content: space-around;
@@ -159,6 +154,7 @@
     background-color: #E7E9EC;
     border-color: #E7E9EC;
 }
+/*
 #sp-bottom1{
   margin: 10px 0px 0px 0px;
 }
@@ -171,6 +167,7 @@
 #sp-bottom4{
   margin: 10px 0px 0px 0px;
 }
+*/
 .offcanvas-menu 
 { background-color: #fff; 
   color: #000;
@@ -294,4 +291,10 @@ img { display: inline; }
 }
 #offcanvas-toggler > .fa {
 color: #fff;
+}
+#sp-main-body {
+  padding: 20px 0;
+}
+.form-horizontal .controls {
+  margin-left: 0px; 
 }

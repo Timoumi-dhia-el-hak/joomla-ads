@@ -21,7 +21,9 @@ JHtml::_('behavior.formvalidator');
 			<?php endif; ?>
 
 			<form id="member-registration" action="<?php echo JRoute::_('index.php?option=com_users&task=registration.register'); ?>" method="post" class="form-validate" enctype="multipart/form-data">
-				<?php foreach ($this->form->getFieldsets() as $fieldset) : ?>
+			<?php $fieldsets = $this->form->getFieldsets();?>
+			<?php $fieldsets = array_reverse($fieldsets); ?>	
+			<?php foreach ($this->form->getFieldsets() as $fieldset) : ?>
 					<?php $fields = $this->form->getFieldset($fieldset->name); ?>
 					<?php if (count($fields)) : ?>
 						<fieldset>
