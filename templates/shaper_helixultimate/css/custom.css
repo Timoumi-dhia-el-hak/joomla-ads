@@ -240,7 +240,7 @@
     border-color: #007084;
 }
 .akeeba-sociallogin-link-button-google, .akeeba-sociallogin-unlink-button-google, .akeeba-sociallogin-button-google {
- margin: 0px 0px 5px 0px !important;
+ margin: 0px 0px 15px 0px !important;
  width: 100%;
   text-shadow: none !important;
   background-image: none !important;
@@ -267,7 +267,7 @@
   padding: 2px 8px 2px 2px !important;
   height: 35px;
   white-space: nowrap;
-  margin: 5px 0px !important;
+  margin: 15px 0px !important;
 }
 
 
