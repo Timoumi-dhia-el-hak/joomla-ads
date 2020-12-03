@@ -5,7 +5,9 @@
 @media(max-width:425px){
   
   }*/
-
+  .paginationblock{
+    display: inline-block
+  }
 #modsimplesearch-form{
   display: flex; 
 }
@@ -28,9 +30,6 @@
 #modsimplesearch-form input, #modsimplesearch-form select {
   width: 250px;
 }
-}
-#sp-header .logo {
-  width: 100%; 
 }
 
 @media  (max-width: 1023px) {
@@ -75,10 +74,6 @@
 }
 .login{
   width: 100%;
-}
-/*logo*/
-#sp-header .logo {
-  width: 40%;
 }
 
 }
