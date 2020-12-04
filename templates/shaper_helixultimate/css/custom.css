@@ -46,12 +46,12 @@
 }
 }
 @media (min-width: 1024px){
-  .d-lg-block {
+  /*.d-lg-block {
     display: flex !important;
     flex-direction: row;
     align-items: center;
     place-content: space-around;
-    }
+    }*/
   #modsimplesearch-form input, #modsimplesearch-form select {
     border-radius: 0px;
     width: 200px;
@@ -308,4 +308,16 @@ color: #fff;
 }
 #sp-logo{
   height: 70px;
+}
+/*hide social share*/
+.article-details .article-ratings-social-share {
+  display:none!important;
+}
+/*hide contactus link*/
+div.message{
+	display: none!important;
+	text-align: right;
+}
+div.contactus-form button.contactus-button{
+	margin-top: 20px;
 }
