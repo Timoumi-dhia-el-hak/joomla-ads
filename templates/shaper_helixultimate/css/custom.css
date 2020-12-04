@@ -138,7 +138,7 @@
 .adsmanager-grid a {
   color: #000000;
 }
-/*bnt-danger*/
+/*btn-danger*/
 .btn-danger {
   color: #fff;
   background-color: #E7E9EC;
@@ -148,6 +148,17 @@
     color: #fff;
     background-color: #E7E9EC;
     border-color: #E7E9EC;
+}
+/*btn-primary*/
+.btn-primary {
+  color: #fff;
+  background-color: #007084;
+  border-color: #007084;
+}
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open>.dropdown-toggle.btn-primary {
+  color: #fff;
+  background-color: #007084;
+  border-color: #007084;
 }
 /*
 #sp-bottom1{
@@ -229,9 +240,7 @@
       height: 35px;
     }
    }
-   
-   
-   .favmenu{
+    .favmenu{
     font-weight: bold
    }
    #imagesupload_browse {
@@ -275,15 +284,7 @@ img { display: inline; }
 .sp-megamenu-parent .sp-dropdown li.sp-menu-item > a {
   color: #252525!important;
 }
-#sp-mobile-header{
-  height: 30px;
-}
-#offcanvas-toggler {
-  display: block;
-  height: 90px;
-  line-height: 60px;
-  font-size: 20px;
-}
+
 #offcanvas-toggler > .fa {
 color: #fff;
 }
@@ -292,4 +293,19 @@ color: #fff;
 }
 .form-horizontal .controls {
   margin-left: 0px; 
+}
+#sp-header .logo {
+  height: 70px;
+  display: inline-flex;
+  margin: 0;
+  align-items: center;
+}
+#sp-mobile-header .logo {
+  height: 70px;
+  display: inline-flex;
+  margin: 0;
+  align-items: center;
+}
+#sp-logo{
+  height: 70px;
 }

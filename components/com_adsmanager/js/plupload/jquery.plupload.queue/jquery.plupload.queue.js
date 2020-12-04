@@ -80,13 +80,13 @@
         }
 		target.prepend(
 			'<div id="'+id+'-container">' +
-			'	<a id="pickfiles" class="plupload_button plupload_add btn-file btn btn-success" href="#"><i class="glyphicon glyphicon-plus"></i> '+ _(label)+'</a>'+
+			'	<a id="pickfiles" class="plupload_add btn-file btn btn-success" href="#"><span class="glyphicon glyphicon-upload"></span>'+'+ ' +_(label)+'</a>'+
 			'	<input type="hidden" id="' + id + '_count" name="' + id + '_count" value="0" />' +
 			'	<ul id="' + id + '_filelist" class="plupload_filelist"></ul>' +
 			'	<span id="'+id+'-pluploadfield"></span>'+
 			'	<div style="clear: both"></div>'+
 			'</div>'
-		);
+			);
 		
 	}
 
