@@ -24,8 +24,15 @@ if ($item->anchor_rel)
 {
 	$attributes['rel'] = $item->anchor_rel;
 }
-
-$linktype = $item->title;
+// Surcharge pour afficher nom utilisateur au lieu de Profil dans le Menu
+// ----------------------------Attention au nom du menu-------------------------
+if (($item->title == "mobile menu") && ($user->id)) {
+    $linktype = $user->get("name");
+} else {
+    $linktype = $item->title;
+}
+//--------------------------------------------------------------------------------------- 
+//$linktype = $item->title;
 
 if ($item->menu_image)
 {

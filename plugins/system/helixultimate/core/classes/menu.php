@@ -70,7 +70,9 @@ class HelixUltimateMenu
             $this->children[$item->parent_id] = $parent;
             $this->_items[$item->id]          = $item;
         }
-
+// ------------- Recup informations utilisateur --------------------//
+    $user = JFactory::getUser();
+/*------------------------------*/
         foreach ($items as &$item)
         {
             $class = '';
@@ -138,8 +140,19 @@ class HelixUltimateMenu
             {
                 $item->flink = \JRoute::_($item->flink);
             }
+// We prevent the double encoding because for some reason the $item is shared for menu modules and we get double encoding
+			// when the cause of that is found the argument should be removed
 
-            $item->title = htmlspecialchars($item->title, ENT_COMPAT, 'UTF-8', false);
+// Surcharge pour afficher nom utilisateur au lieu de Profil dans le Menu
+// ----------------------------Attention au nom du menu-------------------------
+if (($item->title == "Profil") && ($user->id)) {
+    $item->title = htmlspecialchars($user->get("name"), ENT_COMPAT, 'UTF-8', false);
+} else {
+    $item->title = htmlspecialchars($item->title, ENT_COMPAT, 'UTF-8', false);
+}
+//--------------------------------------------------------------------------------------- 
+    
+           // $item->title = htmlspecialchars($item->title, ENT_COMPAT, 'UTF-8', false);
             $item->anchor_css   = htmlspecialchars($item->params->get('menu-anchor_css', ''), ENT_COMPAT, 'UTF-8', false);
             $item->anchor_title = htmlspecialchars($item->params->get('menu-anchor_title', ''), ENT_COMPAT, 'UTF-8', false);
             $item->menu_image   = $item->params->get('menu_image', '') ? htmlspecialchars($item->params->get('menu_image', ''), ENT_COMPAT, 'UTF-8', false) : '';
