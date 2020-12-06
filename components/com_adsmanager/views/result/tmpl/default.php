@@ -150,13 +150,11 @@ else
             echo $this->loadTemplate('grid');
         }
     ?>
-	<div class="row-fluid">
-        <div class="span12 paginationblock">
+	<div class="col-12 paginationblock">
             <?php echo $this->pagination->getPagesLinks(); ?>
         </div>
-    </div>
-    <div class="row-fluid">
-        <div class="span6"><?php echo $this->pagination->getResultsCounter(); ?></div>
+    
+        <div class="col-12"><?php echo $this->pagination->getResultsCounter(); ?></div>
 	<?php if ($this->conf->display_expand == 2) { ?>
 	<script type="text/javascript">
 		function changeMode(mode)

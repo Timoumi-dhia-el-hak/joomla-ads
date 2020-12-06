@@ -74,7 +74,7 @@
   #modsimplesearch-form select {
     border-radius: 0px;
     width: 200px;
-    height: 35px;
+    height: 40px;
   }
   /*adsmanagergrid*/
   .adsmanager-grid {
@@ -113,7 +113,7 @@
 }
 
 .btn-search {
-  height: 35px;
+  height: 40px;
   white-space: nowrap;
   color: #fff;
   cursor: pointer;
@@ -225,8 +225,7 @@ body.itemid-437 #sp-header,
   color: #000;
 }
 .close-offcanvas {
-  border: 1px solid #000;
-  color: #000;
+ top: 10px;
 }
 #offcanvas-toggler > i {
   font-size: 30px;
@@ -254,7 +253,7 @@ body.itemid-437 #sp-header,
   #modsimplesearch-form input {
     border-radius: 0px;
     width: 350px;
-    height: 35px;
+    height: 40px;
   }
   .login {
     width: 100%;
@@ -269,7 +268,7 @@ body.itemid-437 #sp-header,
   }
   #modsimplesearch-form input {
     width: 300px;
-    height: 35px;
+    height:40px;
   }
 }
 @media (max-width: 320px) {
@@ -279,7 +278,7 @@ body.itemid-437 #sp-header,
   #modsimplesearch-form input {
     border-radius: 0px;
     width: 250px;
-    height: 35px;
+    height: 40px;
   }
 }
 .favmenu {
@@ -299,7 +298,7 @@ body.itemid-437 #sp-header,
   background-image: none !important;
   border: none !important;
   padding: 2px 8px 2px 2px !important;
-  height: 35px;
+  height: 40px;
   white-space: nowrap;
   color: #fff;
   cursor: pointer;
@@ -320,7 +319,7 @@ body.itemid-437 #sp-header,
   background-image: none !important;
   border: none !important;
   padding: 2px 8px 2px 2px !important;
-  height: 35px;
+  height:40px;
   white-space: nowrap;
   margin: 15px 0px !important;
 }
@@ -382,4 +381,44 @@ div.contactus-form button.contactus-button {
 /*link color*/
 a {
   color: #007084;
+}
+/*deals btn*/
+.btn-deals {
+  height: 100%;
+   color: #fff;
+  cursor: pointer;
+  background: #f3a847;
+  transition: all 0.2s ease-out, color 0.2s ease-out;
+  border-color: #f3a847;
+}
+.btn-deals a{
+  color:#fff
+}
+/*adsmanager ad city width*/
+#chzn-container-single{
+  width: 100%;
+}
+/*offcanavasmenutoggler*/
+.offcanvas-menu .offcanvas-inner .sp-module ul > li.menu-parent > a > .menu-toggler:after, .offcanvas-menu .offcanvas-inner .sp-module ul > li.menu-parent > .menu-separator > .menu-toggler:after {
+  content: "\002B";
+}
+.offcanvas-menu .offcanvas-inner .sp-module ul > li.menu-parent.menu-parent-open > a > .menu-toggler:after, .offcanvas-menu .offcanvas-inner .sp-module ul > li.menu-parent.menu-parent-open > .menu-separator > .menu-toggler:after {
+  content: "\2212";
+}
+.offcanvas-menu .offcanvas-inner .sp-module ul > li.menu-parent > a > .menu-toggler, .offcanvas-menu .offcanvas-inner .sp-module ul > li.menu-parent > .menu-separator > .menu-toggler {
+
+  color: #000;
+  top: 60%;
+}
+.offcanvas-menu .offcanvas-inner .sp-module ul > li a:hover, .offcanvas-menu .offcanvas-inner .sp-module ul > li span:hover, .offcanvas-menu .offcanvas-inner .sp-module ul > li a:focus, .offcanvas-menu .offcanvas-inner .sp-module ul > li span:focus {
+  color: #000
+}
+.offcanvas-menu .offcanvas-inner .sp-module ul > li ul li a {
+  color: #000;
+}
+.offcanvas-menu .offcanvas-inner .sp-module .sp-module-content .menu > li {
+  padding: 10px 0px;
+}
+.offcanvas-menu .offcanvas-inner .sp-module .sp-module-content .menu > li{
+  border-bottom: 1px solid #aaa;
 }
