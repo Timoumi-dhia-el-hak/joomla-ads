@@ -187,18 +187,18 @@ body.itemid-437 #sp-header,
 }
 /*btn-secondary*/
 .btn-secondary {
-  color: #fff;
-  background-color: #e7e9ec;
-  border-color: #e7e9ec;
+  color: #000;
+  background-color: #EFEFEF;
+  border-color:#EFEFEF;
 }
 .btn-secondary:hover,
 .btn-secondary:focus,
 .btn-secondary:active,
 .btn-secondary.active,
 .open > .dropdown-toggle.btn-secondary {
-  color: #fff;
-  background-color: #e7e9ec;
-  border-color: #e7e9ec;
+  color: #000;
+  background-color: #EFEFEF;
+  border-color:#EFEFEF;
 }
 /*
 #sp-bottom1{

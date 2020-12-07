@@ -36,7 +36,7 @@ JHtml::_('behavior.formvalidator');
 									<?php else : ?>
 										<?php $fieldName = $field->getAttribute('name'); ?>
 										<?php if(($fieldName == 'password1') || ($fieldName == 'password2') || ($fieldName == 'email1') || ($fieldName == 'email2')) : ?>
-											<div class="col-md-6">
+											<div class="col-md-12">
 										<?php else: ?>
 											<div class="col-lg-12">
 										<?php endif; ?>
