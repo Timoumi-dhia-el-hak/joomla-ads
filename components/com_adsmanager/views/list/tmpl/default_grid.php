@@ -49,21 +49,22 @@ defined('_JEXEC') or die( 'Restricted access' );
                 } else if ($this->conf->nb_images > 0) {
                     echo "<a href='".$linkTarget."'><img src='".ADSMANAGER_NOPIC_IMG."' alt='nopic' /></a>";
                 }?>
+                 <!--<price value>-->
+            <div class="text-right">
+            <?php echo $this->field->showFieldValue($content,$this->fields['ad_price']);?>
             </div>
-            <!--<price value>-->
-            <div>
-            <?php echo '<p class="text-right">'.' '.$this->field->showFieldValue($content,$this->fields['ad_price']).'</p>';?>
             </div>
-           <div class="desc">
-                <?php 
+           
+           <!-- <div class="desc">
+                 <?php /*
                     $content->ad_text = strip_tags(str_replace ('<br />'," ",$content->ad_text));
                     $af_text = JString::substr($content->ad_text, 0, 60);
                     if (strlen($content->ad_text)>60) {
                         $af_text .= "[...]";
                     }
-                    echo htmlspecialchars($af_text);
-                ?>
-            </div>
+                    echo htmlspecialchars($af_text);*/
+                ?> 
+            </div> -->
         </div>
     <?php 
     }

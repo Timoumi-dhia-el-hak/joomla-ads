@@ -26,9 +26,9 @@
 }
 
 @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
-  .d-lg-block {
+  /*.d-lg-block {
     display: flex !important;
-  }
+  }*/
 
   #sp-header i.fa-bars,
   #offcanvas-toggler,
@@ -54,7 +54,8 @@
 @media (max-width: 1023px) {
   .adsmanager-grid {
     width: 100%;
-    height: 255px;
+    height: 300px;
+    margin-top: 20px;
   }
   #catselection {
     display: none;
@@ -64,6 +65,15 @@
   }
 }
 @media (min-width: 1024px) {
+  /*carusel
+  .diaporama{
+    max-width: 50%;
+  }
+  */
+  .adsdetail{
+    display:flex
+  }
+  
   /*.d-lg-block {
     display: flex !important;
     flex-direction: row;
@@ -88,7 +98,7 @@
     -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
     -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
     box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
-    margin-bottom: 20px;
+    margin-top: 20px;
     height: 300px;
   }
   .login {
@@ -135,7 +145,7 @@ body.itemid-437 #sp-header,
 /*href al une*/
 .span12 a {
   color: #007185;
-}
+  }
 /*breadcrumb*/
 .breadcrumb {
   background-color: #fff;
@@ -422,3 +432,12 @@ a {
 .offcanvas-menu .offcanvas-inner .sp-module .sp-module-content .menu > li{
   border-bottom: 1px solid #aaa;
 }
+.cree_annonce {
+  white-space: nowrap;
+  color: #fff;
+  cursor: pointer;
+  background: #f3a847;
+  transition: all 0.2s ease-out, color 0.2s ease-out;
+  border-color: #f3a847;
+  }
+  
