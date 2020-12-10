@@ -29,6 +29,11 @@
   /*.d-lg-block {
     display: flex !important;
   }*/
+  #order{
+    max-width: 20%;
+    margin-left: 80%;
+    margin-bottom: 20px;
+  }
 
   #sp-header i.fa-bars,
   #offcanvas-toggler,
@@ -70,6 +75,11 @@
     max-width: 50%;
   }
   */
+  #order{
+    max-width: 20%;
+    margin-left: 80%;
+    margin-bottom: 20px;
+  }
   .adsdetail{
     display:flex
   }
@@ -432,12 +442,33 @@ a {
 .offcanvas-menu .offcanvas-inner .sp-module .sp-module-content .menu > li{
   border-bottom: 1px solid #aaa;
 }
-.cree_annonce {
-  white-space: nowrap;
-  color: #fff;
+/*.cree_annonce {
   cursor: pointer;
   background: #f3a847;
   transition: all 0.2s ease-out, color 0.2s ease-out;
   border-color: #f3a847;
-  }
+      position: relative;
+    line-height: 28px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 200px;
+      }
+  .cree_annonce {
+    box-shadow: 1px 1px 5px 1px #f3a947;
+	background-color:#f3a947;
+	border-radius:10px;
+	border:1px solid #f3a847;
+	display:inline-block;
+	cursor:pointer;
+  text-decoration:none;
+}
+.cree_annonce:hover {
+	background-color:#f3a947;
+}
+.cree_annonce:active {
+	position:relative;
+	top:1px;
+}*/
+
+  /*select order*/
   

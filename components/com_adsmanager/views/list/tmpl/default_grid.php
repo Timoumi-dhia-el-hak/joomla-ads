@@ -50,7 +50,7 @@ defined('_JEXEC') or die( 'Restricted access' );
                     echo "<a href='".$linkTarget."'><img src='".ADSMANAGER_NOPIC_IMG."' alt='nopic' /></a>";
                 }?>
                  <!--<price value>-->
-            <div class="text-right">
+            <div class="text-center">
             <?php echo $this->field->showFieldValue($content,$this->fields['ad_price']);?>
             </div>
             </div>
