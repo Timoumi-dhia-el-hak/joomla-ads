@@ -26,9 +26,10 @@
 }
 
 @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
-  /*.d-lg-block {
+  .d-lg-block {
     display: flex !important;
-  }*/
+    align-items: flex-end;
+  }
   #order{
     max-width: 20%;
     margin-left: 80%;
@@ -84,12 +85,12 @@
     display:flex
   }
   
-  /*.d-lg-block {
-    display: flex !important;
+  .d-lg-block {
+    
     flex-direction: row;
     align-items: center;
     place-content: space-around;
-    }*/
+    }
   #modsimplesearch-form input,
   #modsimplesearch-form select {
     border-radius: 0px;
@@ -450,34 +451,25 @@ a {
 .offcanvas-menu .offcanvas-inner .sp-module .sp-module-content .menu > li{
   border-bottom: 1px solid #aaa;
 }
-/*.cree_annonce {
+.cree_annonce {
   cursor: pointer;
+  display: inline !important;
   background: #f3a847;
   transition: all 0.2s ease-out, color 0.2s ease-out;
   border-color: #f3a847;
-      position: relative;
-    line-height: 28px;
-    text-align: center;
+  position: relative;
+      text-align: center;
     text-decoration: none;
-    border-radius: 200px;
-      }
-  .cree_annonce {
-    box-shadow: 1px 1px 5px 1px #f3a947;
-	background-color:#f3a947;
-	border-radius:10px;
-	border:1px solid #f3a847;
-	display:inline-block;
-	cursor:pointer;
-  text-decoration:none;
-}
+    border-radius: 10px;
+   border:5px solid #f3a847;
+        }
 .cree_annonce:hover {
 	background-color:#f3a947;
 }
 .cree_annonce:active {
 	position:relative;
 	top:1px;
-}*/
+}
 .waves-effect{
   width: 100%;
 }
-  
