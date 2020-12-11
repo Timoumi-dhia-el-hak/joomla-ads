@@ -92,7 +92,7 @@ defined('_JEXEC') or die( 'Restricted access' );
                   </th>
                   <th class="hidden-phone"><?php echo JText::_('ADSMANAGER_INFO'); ?>
                   </th>
-                  <th class="hidden-phone"><?php echo JText::_('ADSMANAGER_ACTIONS'); ?>
+                  <th ><?php echo JText::_('ADSMANAGER_ACTIONS'); ?>
                   </th>
                 </tr>
             <?php
@@ -113,7 +113,7 @@ defined('_JEXEC') or die( 'Restricted access' );
                                 echo "<a href='".$linkTarget."'><img class='fad-image' src='".ADSMANAGER_NOPIC_IMG."' alt='nopic' /></a>";
                         }
                         ?>
-                        <div>
+                        <div class="hidden-phone">
                         <?php 
                             $content->ad_text = strip_tags(str_replace ('<br />'," ",$content->ad_text));
                             $af_text = JString::substr($content->ad_text, 0, 100);
@@ -174,14 +174,14 @@ defined('_JEXEC') or die( 'Restricted access' );
                     <td class="tdcenter">
                         <?php
                         $target = TRoute::_("index.php?option=com_adsmanager&task=write&catid=".$content->catid."&id=$content->id");
-                        echo "<a href='".$target."'>".JText::_('ADSMANAGER_CONTENT_EDIT')."</a>";
+                        echo "<button class=\"btn btn-outline-info waves-effect\"  href='".$target."'>".JText::_('ADSMANAGER_CONTENT_EDIT')."</button>";
                         echo "<br/>";
                         $target = TRoute::_("index.php?option=com_adsmanager&task=delete&catid=".$content->catid."&id=$content->id");
-                        echo "<a onclick='return confirm(\"".htmlspecialchars(JText::_('ADSMANAGER_CONFIRM_DELETE'),ENT_QUOTES)."\")' href='".$target."'>".JText::_('ADSMANAGER_CONTENT_DELETE')."</a>";
+                        echo "<button class=\"btn btn-outline-info waves-effect\" onclick='return confirm(\"".htmlspecialchars(JText::_('ADSMANAGER_CONFIRM_DELETE'),ENT_QUOTES)."\")' href='".$target."'>".JText::_('ADSMANAGER_CONTENT_DELETE')."</button>";
                         if (ADSMANAGER_SPECIAL == "duplicate"){
                             echo "<br/>";
                             $target = TRoute::_("index.php?option=com_adsmanager&task=duplicate&catid=".$content->catid."&id=$content->id");
-                            echo "<a href='".$target."'>".JText::_('ADSMANAGER_CONTENT_DUPLICATE')."</a>";
+                            echo "<button href='".$target."'>".JText::_('ADSMANAGER_CONTENT_DUPLICATE')."</button>";
                         }
                         if ($this->conf->expiration == 1) { 
                             if ($content->expiration_date != null) {
@@ -193,7 +193,7 @@ defined('_JEXEC') or die( 'Restricted access' );
                                     } else {
                                         $target = TRoute::_("index.php?option=com_adsmanager&task=renew&id=$content->id");
                                     }
-                                    echo "<br/><a href='".$target."'>".JText::_('ADSMANAGER_RENEW_CONTENT')."</a>";
+                                    echo "<br/><button class=\"btn btn-outline-info waves-effect\"  href='".$target."'>".JText::_('ADSMANAGER_RENEW_CONTENT')."</button>";
                                 }
                             }
                         }

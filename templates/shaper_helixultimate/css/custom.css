@@ -253,6 +253,10 @@ body.itemid-437 #sp-header,
 }
 
 @media (max-width: 425px) {
+   /*my-ads-phone*/
+   .hidden-phone{
+    display:none
+      }
   #sp-left {
     display: none;
   }
@@ -292,6 +296,10 @@ body.itemid-437 #sp-header,
   }
 }
 @media (max-width: 320px) {
+  /*my-ads-phone*/
+  .hidden-phone{
+display:none
+  }
   #sp-left {
     display: none;
   }
@@ -469,6 +477,7 @@ a {
 	position:relative;
 	top:1px;
 }*/
-
-  /*select order*/
+.waves-effect{
+  width: 100%;
+}
   
