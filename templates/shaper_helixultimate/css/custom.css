@@ -33,12 +33,6 @@
   .sp-megamenu-parent > li > a, .sp-megamenu-parent > li > span {
   padding: 0px 8px;
   }
-  #order{
-    max-width: 20%;
-    margin-left: 80%;
-    margin-bottom: 20px;
-  }
-
   #sp-header i.fa-bars,
   #offcanvas-toggler,
   #sp-header #offcanvas-toggler i.fa-bars,
@@ -77,15 +71,10 @@
     max-width: 50%;
   }
   */
-  #order{
-    max-width: 20%;
-    margin-left: 80%;
-    margin-bottom: 20px;
-  }
+  
   .adsdetail{
     display:flex
   }
-  
   .d-lg-block {
     
     flex-direction: row;
@@ -472,4 +461,37 @@ padding: 5px;
 }
 .waves-effect{
   width: 100%;
+}
+/*sort field*/
+.sorting{
+  display: flex;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.sortlabel{
+  margin:20px 0px
+}
+#order{
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+/*ad detail*/
+#adinfo{
+  padding:20px 0px;
+  }
+.section-header {
+  padding:10px 0px;
+  border-top: 1px solid transparent;
+  border-top-color: #eaeaea;
+}
+.pubdate{
+  color:#aaa
+}
+/*price*/
+.form-horizontal .control-label {
+  float:none;
+  width: auto;
+  padding-top: 5px;
+  padding-right: 5px;
+  text-align: left;
 }

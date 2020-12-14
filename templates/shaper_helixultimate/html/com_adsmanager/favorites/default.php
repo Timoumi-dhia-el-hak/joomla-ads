@@ -48,37 +48,33 @@ jQ(function() {
 </script>
 
 <?php if (($conf->display_list_sort == 1)||($conf->display_list_search == 1)) { ?>
-<div class="row-fluid">
-<div class="span12">
-	<?php if ($conf->display_list_search == 1) { ?>
-        <div class="span6">
-		<form action="<?php echo TLink::getMyFavoritesLink() ?>" method="post">
-                <div class="span12">
-                    <input name="tsearch" id="tsearch" placeholder="<?php echo JText::_('ADSMANAGER_LIST_SEARCH'); ?>" maxlength="20" alt="search" type="text" size="20" value="<?php echo $this->tsearch;?>"  onblur="if(this.value=='') this.value='';" onfocus="if(this.value=='<?php echo $this->tsearch;?>') this.value='';" />
-		</div>
-		</form> 
-        </div>
-	<?php } ?>
-	<?php if ($conf->display_list_sort == 1) { ?>
-		<?php if (isset($this->orders)) { ?>
-        <div class="text-right">
-		<?php echo JText::_('ADSMANAGER_ORDER_BY_TEXT'); ?>
-		<select name="order" size="1" id="order">
-				<option value="0" dir="DESC" <?php if ($this->order == "0") { echo "selected='selected'"; } ?>><?php echo JText::_('ADSMANAGER_DATE'); ?></option>
-			   <?php foreach($this->orders as $o)
-			   {
-	               ?>
-				<option value="<?php echo $o->fieldid ?>" dir="DESC" <?php if (($this->orderdir == "DESC") && ($this->order == $o->fieldid)) { echo "selected='selected'"; } ?>><?php echo sprintf(JText::_('ADSMANAGER_ORDER_BY_DESC'),JText::_($o->title))?></option>
-				<option value="<?php echo $o->fieldid ?>" dir="ASC" <?php if (($this->orderdir == "ASC") && ($this->order == $o->fieldid)) { echo "selected='selected'"; } ?>><?php echo sprintf(JText::_('ADSMANAGER_ORDER_BY_ASC'),JText::_($o->title))?></option>
-				<?php
-			   }
-			 ?>
-		</select>	
-        </div>
-		<?php } ?>	
-	<?php } ?>		  
-</div>
-</div>
+	<div class="row-fluid">
+    <div class="span12 col-md-12 sorting">
+        <?php if ($conf->display_list_search == 1) { ?>
+            <div class="span6">
+            <form action="<?php echo TRoute::_('index.php?option=com_adsmanager&view=myads') ?>" method="post">
+                    <div class="span12">
+                        <input name="tsearch" id="tsearch" placeholder="<?php echo JText::_('ADSMANAGER_LIST_SEARCH'); ?>" maxlength="20" alt="search" type="text" size="20" value="<?php echo $this->tsearch;?>"  onblur="if(this.value=='') this.value='';" onfocus="if(this.value=='<?php echo $this->tsearch;?>') this.value='';" />
+            </div>
+            </form> 
+            </div>
+        <?php } ?>
+        <?php if ($conf->display_list_sort == 1) { ?>
+            <?php if (isset($this->orders)) { ?>
+                <div class=" col-md-9 text-right "><?php echo JText::_('ADSMANAGER_ORDER_BY_TEXT'); ?></div> 
+                <div class="col-md-3 text-right ">   
+                <select name="order" size="1" id="order">
+                    <option value="0" dir="DESC" <?php if ($this->order == "0") { echo "selected='selected'"; } ?>><?php echo JText::_('ADSMANAGER_DATE'); ?></option>
+                        <?php foreach($this->orders as $o) { ?>
+                    <option value="<?php echo $o->fieldid ?>" dir="DESC" <?php if (($this->orderdir == "DESC") && ($this->order == $o->fieldid)) { echo "selected='selected'"; } ?>><?php echo sprintf(JText::_('ADSMANAGER_ORDER_BY_DESC'),JText::_($o->title))?></option>
+                    <option value="<?php echo $o->fieldid ?>" dir="ASC" <?php if (($this->orderdir == "ASC") && ($this->order == $o->fieldid)) { echo "selected='selected'"; } ?>><?php echo sprintf(JText::_('ADSMANAGER_ORDER_BY_ASC'),JText::_($o->title))?></option>
+                        <?php } ?>
+            </select>	
+                </div>
+            <?php } ?>	
+        <?php } ?>		  
+    </div>
+    </div>
 <?php } ?>
 <?php $this->general->showGeneralLink() ?>
 <?php

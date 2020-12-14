@@ -214,7 +214,7 @@ if ($conf->metadata_mode != 'nometadata') {
 										<?php
 										if (!empty($this->fDisplay[4])) {
 											echo '<div class="row-fluid">
-                        <div class="span6">';
+                        <div class="span6" id="adinfo">';
 											$strtitle = @JText::_($this->positions[3]->title);
 											if ($strtitle != "") echo "<h5 class='section-header'>" . @$strtitle . "</h5>";
 											foreach ($this->fDisplay[4] as $field) {
@@ -228,8 +228,7 @@ if ($conf->metadata_mode != 'nometadata') {
 													echo "$c</span></h5>";
 												}
 											}
-											echo '</div></div>';
-										}
+											echo '</div></div>';																										}
 										if (!empty($this->fDisplay[2])) {
 											$strtitle = @JText::_($this->positions[1]->title);
 											if ($strtitle != "") echo "<h5 class='section-header'>" . @$strtitle . "</h5>";
@@ -247,7 +246,7 @@ if ($conf->metadata_mode != 'nometadata') {
 										}
 										if (!empty($this->fDisplay[5])) {
 											$strtitle = @JText::_($this->positions[4]->title);
-											if ($strtitle != "") echo "<h5 class='section-header'>" . @$strtitle . "</h5>";
+											if ($strtitle != "") echo "<h5 class='section-header '>" . @$strtitle . "</h5>";							
 											if ($this->showContact) {
 												if (isset($this->fDisplay[5])) {
 													foreach ($this->fDisplay[5] as $field) {
@@ -271,7 +270,7 @@ if ($conf->metadata_mode != 'nometadata') {
 										}
 										?>
 										</div>
-
+										<?php	echo"<p class=\"section-header pubdate\">publié " .$this->reorderDate($this->content->date_created)."</p> ";?>
 										<div class="span12 col-lg-right">
 											<?php if (!empty($this->fDisplay[3])) {
 												$strtitle = @JText::_($this->positions[2]->title);
@@ -289,8 +288,6 @@ if ($conf->metadata_mode != 'nometadata') {
 												}
 											} ?>
 										</div>
-
-
 										<div class="span12 col-lg-right">
 											<?php if (!empty($this->fDisplay[6])) {
 												$strtitle = @JText::_($this->positions[5]->title);
