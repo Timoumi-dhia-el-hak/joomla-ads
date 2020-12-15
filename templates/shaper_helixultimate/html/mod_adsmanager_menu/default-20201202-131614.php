@@ -18,11 +18,11 @@ defined('_JEXEC') or die( 'Restricted access' );
     <?php if ($displayprofile) {?>
     <li><a href="<?php echo $link_show_profile; ?>"><span><?php echo JText::_('ADSMANAGER_MENU_PROFILE');?></span></a></li>
     <?php } ?>
-    <?php if ($displaymyads) {?>
-    <li><a href="<?php echo $link_show_user; ?>"><span><?php echo JText::_('ADSMANAGER_MENU_USER_ADS');?></span></a></li>
-    <?php } ?>
     <?php if ($displayfavorites) {?>
     <li class="favmenu"><a href="<?php echo $link_favorites; ?>"><span><?php echo JText::_('ADSMANAGER_MENU_FAVORITES');?></span></a></li>
+    <?php } ?>
+    <?php if ($displaymyads) {?>
+    <li class="favmenu"><a href="<?php echo $link_show_user; ?>"><span><?php echo JText::_('ADSMANAGER_MENU_USER_ADS');?></span></a></li>
     <?php } ?>
     <?php if ($displayrules) {?>
     <li><a href="<?php echo $link_show_rules; ?>"><span><?php echo JText::_('ADSMANAGER_MENU_RULES');?></span></a></li>

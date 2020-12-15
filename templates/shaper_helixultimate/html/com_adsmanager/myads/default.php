@@ -174,14 +174,14 @@ defined('_JEXEC') or die( 'Restricted access' );
                     <td class="tdcenter">
                         <?php
                         $target = TRoute::_("index.php?option=com_adsmanager&task=write&catid=".$content->catid."&id=$content->id");
-                        echo "<button class=\"btn btn-outline-info waves-effect\"  href='".$target."'>".JText::_('ADSMANAGER_CONTENT_EDIT')."</button>";
+                        echo "<a class=\"btn btn-outline-info waves-effect\" a href='".$target."'>".JText::_('ADSMANAGER_CONTENT_EDIT')."</a>";
                         echo "<br/>";
                         $target = TRoute::_("index.php?option=com_adsmanager&task=delete&catid=".$content->catid."&id=$content->id");
-                        echo "<button class=\"btn btn-outline-info waves-effect\" onclick='return confirm(\"".htmlspecialchars(JText::_('ADSMANAGER_CONFIRM_DELETE'),ENT_QUOTES)."\")' href='".$target."'>".JText::_('ADSMANAGER_CONTENT_DELETE')."</button>";
+                        echo "<a class=\"btn btn-outline-info waves-effect\" onclick='return confirm(\"".htmlspecialchars(JText::_('ADSMANAGER_CONFIRM_DELETE'),ENT_QUOTES)."\")' href='".$target."'>".JText::_('ADSMANAGER_CONTENT_DELETE')."</a>";
                         if (ADSMANAGER_SPECIAL == "duplicate"){
                             echo "<br/>";
                             $target = TRoute::_("index.php?option=com_adsmanager&task=duplicate&catid=".$content->catid."&id=$content->id");
-                            echo "<button href='".$target."'>".JText::_('ADSMANAGER_CONTENT_DUPLICATE')."</button>";
+                            echo "<a href='".$target."'>".JText::_('ADSMANAGER_CONTENT_DUPLICATE')."</a>";
                         }
                         if ($this->conf->expiration == 1) { 
                             if ($content->expiration_date != null) {
@@ -193,7 +193,7 @@ defined('_JEXEC') or die( 'Restricted access' );
                                     } else {
                                         $target = TRoute::_("index.php?option=com_adsmanager&task=renew&id=$content->id");
                                     }
-                                    echo "<br/><button class=\"btn btn-outline-info waves-effect\"  href='".$target."'>".JText::_('ADSMANAGER_RENEW_CONTENT')."</button>";
+                                    echo "<br/><a class=\"btn btn-outline-info waves-effect\"  href='".$target."'>".JText::_('ADSMANAGER_RENEW_CONTENT')."</a>";
                                 }
                             }
                         }
