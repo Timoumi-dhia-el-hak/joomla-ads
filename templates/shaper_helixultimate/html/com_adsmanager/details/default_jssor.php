@@ -53,8 +53,11 @@ if ($conf->metadata_mode != 'nometadata') {
 			<div class="col-md-12">
 				<div class="col page-header">
 					<div class="span8">
-						<h1 class="no-margin-top">
+						<h2 class="no-margin-top">
 							<?php
+							if(TText::_($this->list_name)==="Deals"){
+								echo  "Deal"."&nbsp".":"."&nbsp" ;
+							}
 							if (isset($this->fDisplay[1])) {
 								foreach ($this->fDisplay[1] as $field) {
 									$c = $this->field->showFieldValue($this->content, $field);
@@ -70,7 +73,7 @@ if ($conf->metadata_mode != 'nometadata') {
 									}
 								}
 							} ?>
-						</h1>
+						</h2>
 						<?php echo $this->content->event->onContentAfterTitle; ?>
 						<div>
 							<?php
@@ -270,7 +273,8 @@ if ($conf->metadata_mode != 'nometadata') {
 										}
 										?>
 										</div>
-										<?php	echo"<p class=\"section-header pubdate\">publié " .$this->reorderDate($this->content->date_created)."</p> ";?>
+										<div class="section-header"><i class="fas fa-tag"></i><?php echo " &nbsp;". TText::_($this->list_name) ;?></div>
+										<?php	echo"<p class=\"section-header pubdate\">publié ".$this->reorderDate($this->content->date_created)."</p> ";?>
 										<div class="span12 col-lg-right">
 											<?php if (!empty($this->fDisplay[3])) {
 												$strtitle = @JText::_($this->positions[2]->title);

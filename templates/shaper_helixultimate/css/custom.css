@@ -495,3 +495,7 @@ padding: 5px;
   padding-right: 5px;
   text-align: left;
 }
+/*tag icon*/
+.fa-tag{
+  color: #aaa;
+}
