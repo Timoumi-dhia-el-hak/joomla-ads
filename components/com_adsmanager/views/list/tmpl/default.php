@@ -166,7 +166,7 @@ jQ(function() {
         <div class=" col-md-9 text-right sortlabel"><?php echo JText::_('ADSMANAGER_ORDER_BY_TEXT'); ?></div> 
                 <div class="col-md-3 text-right ">   
                 <select name="order" size="1" id="order">
-                    <option value="0" dir="DESC" <?php if ($this->order == "0") { echo "selected='selected'"; } ?>><?php echo JText::_('ADSMANAGER_DATE'); ?></option>
+                    
                         <?php foreach($this->orders as $o) { ?>
                     <option value="<?php echo $o->fieldid ?>" dir="DESC" <?php if (($this->orderdir == "DESC") && ($this->order == $o->fieldid)) { echo "selected='selected'"; } ?>><?php echo sprintf(JText::_('ADSMANAGER_ORDER_BY_DESC'),JText::_($o->title))?></option>
                     <option value="<?php echo $o->fieldid ?>" dir="ASC" <?php if (($this->orderdir == "ASC") && ($this->order == $o->fieldid)) { echo "selected='selected'"; } ?>><?php echo sprintf(JText::_('ADSMANAGER_ORDER_BY_ASC'),JText::_($o->title))?></option>

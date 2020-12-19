@@ -64,7 +64,7 @@ jQ(function() {
         <div class="text-right">
 		<?php echo JText::_('ADSMANAGER_ORDER_BY_TEXT'); ?>
 		<select name="order" size="1" id="order">
-				<option value="0" dir="DESC" <?php if ($this->order == "0") { echo "selected='selected'"; } ?>><?php echo JText::_('ADSMANAGER_DATE'); ?></option>
+				
 			   <?php foreach($this->orders as $o)
 			   {
 	               ?>
