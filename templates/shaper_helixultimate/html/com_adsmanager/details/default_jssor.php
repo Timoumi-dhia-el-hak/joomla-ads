@@ -258,9 +258,11 @@ if ($conf->metadata_mode != 'nometadata') {
 															$title = $this->field->showFieldTitle(@$this->content->catid, $field);
 															echo "<span class='f" . $field->name . "'>";
 															if ($title != "")
-																echo "<b>" . htmlspecialchars($title) . "</b>: ";
-															echo "$c<br/>";
+																echo  htmlspecialchars($title) . "</b>: ";
+															 echo "<a href='tel:".$c."'>$c</a>";
+															
 															echo "</span>";
+															echo "</br>";
 														}
 													}
 												}
@@ -272,6 +274,25 @@ if ($conf->metadata_mode != 'nometadata') {
 											}
 										}
 										?>
+										</div>
+										<div class="span12 col-lg-right">
+											<?php if (!empty($this->fDisplay[6])) {
+												$strtitle = @JText::_($this->positions[5]->title);
+												if ($strtitle != "") 
+												foreach ($this->fDisplay[6] as $field) {
+													$c = $this->field->showFieldValue($this->content, $field);
+													if (($c !== "") && ($c !== null)) {
+														$title = $this->field->showFieldTitle(@$this->content->catid, $field);
+														echo "<span class='f" . $field->name . "'>";
+														if ($title != "")
+															echo "<b>" . htmlspecialchars($title) . "</b>: ";
+														echo "$c<br/>";
+														echo "</span>";
+													}
+												}
+											} ?>
+
+
 										</div>
 										<div class="section-header"><i class="fas fa-tag"></i><?php echo " &nbsp;". TText::_($this->list_name) ;?></div>
 										<?php	echo"<p class=\"section-header pubdate\">publié ".$this->reorderDate($this->content->date_created)."</p> ";?>
@@ -292,25 +313,7 @@ if ($conf->metadata_mode != 'nometadata') {
 												}
 											} ?>
 										</div>
-										<div class="span12 col-lg-right">
-											<?php if (!empty($this->fDisplay[6])) {
-												$strtitle = @JText::_($this->positions[5]->title);
-												if ($strtitle != "") echo "<h5 class='section-header'>" . @$strtitle . "</h5>";
-												foreach ($this->fDisplay[6] as $field) {
-													$c = $this->field->showFieldValue($this->content, $field);
-													if (($c !== "") && ($c !== null)) {
-														$title = $this->field->showFieldTitle(@$this->content->catid, $field);
-														echo "<span class='f" . $field->name . "'>";
-														if ($title != "")
-															echo "<b>" . htmlspecialchars($title) . "</b>: ";
-														echo "$c<br/>";
-														echo "</span>";
-													}
-												}
-											} ?>
-
-
-										</div>
+										
 									</div>
 
 								</div>
