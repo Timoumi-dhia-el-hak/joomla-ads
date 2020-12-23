@@ -1,4 +1,4 @@
-window.onload=function() {
+/* window.onload=function() {
 let textarea = document.querySelector("#fad_text");
 let input = document.querySelector("#fad_counter")
 
@@ -16,11 +16,29 @@ textarea.addEventListener("input", function(){
     }
 })
 
-}
-window.onload=function() {
+} */
+ window.onload=function() {
 let fad_phone= document.querySelector(".fad_phone").innerHTML
 document.querySelector(".fad_phone").href=fad_phone
 
 
 
-}
+} 
+
+jQuery(document).ready(function() {
+        $('#fad_text').on('input propertychange', function() {
+            CharLimit(this, 200);
+        });
+    });
+
+    function CharLimit(input, maxChar) {
+        
+       let len = $(input).val().length;
+      
+       $('#fad_counter').val(maxChar - len + ' caractères restants');
+            if (len > maxChar) {
+                $(input).val($(input).val().substring(0, maxChar));
+            $('#fad_counter').val(' Vous avez atteint le nombre maximum de caractères');
+        }
+       
+    }
