@@ -29,6 +29,13 @@ jQuery(document).ready(function() {
         $('#fad_text').on('input propertychange', function() {
             CharLimit(this, 200);
         });
+        $(window).scroll(function(){
+            if ($(this).scrollTop() < 200) {
+                 $(".float").fadeIn();
+             } else {
+                 $(".float").fadeOut();
+             }
+    });
     });
 
     function CharLimit(input, maxChar) {
@@ -42,3 +49,11 @@ jQuery(document).ready(function() {
         }
        
     }
+
+    $(window).scroll(function(){
+        if ($(this).scrollTop() > 200) {
+             $(".float").fadeIn();
+         } else {
+             $(".float").fadeOut();
+         }
+});

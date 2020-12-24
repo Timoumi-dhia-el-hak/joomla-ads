@@ -519,5 +519,34 @@ padding: 5px;
 }
 /*tag icon*/
 .fa-tag{
-  color: #aaa;
+  color: #fff;
+}
+/*flot button*/
+.float{
+	position:fixed;
+	width:150px;
+	height:40px;
+	bottom:40px;
+  right: auto;
+  left: auto;
+	background-color:#F3A847;
+	color:#FFF;
+	border-radius:5px;
+	text-align:center;
+  box-shadow: 2px 2px 3px #F3A847;
+  display: table-cell;
+ 
+}
+
+.my-float{
+	margin-top:22px;
+}
+.custom{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+#sp-footer2 a {
+  color: #fff;
 }
