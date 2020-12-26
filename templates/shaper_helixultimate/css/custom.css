@@ -580,9 +580,27 @@ padding: 5px;
 	color:#FFF;
 	border-radius:5px;
 	text-align:center;
-  box-shadow: 2px 2px 3px #F3A847;
   display: table-cell;
  
+}
+#sp-footer2 a.float {
+  display: inline !important;
+background: #f3a847;
+transition: all 0.2s ease-out, color 0.2s ease-out;
+border-color: #f3a847;
+
+text-align: center;
+text-decoration: none;
+border-radius: 10px;
+border: 5px solid #f3a847;
+padding: 5px;
+        }
+#sp-footer2 a.float:hover {
+	background-color:#f3a947;
+}
+#sp-footer2 a.float:active {
+	position:relative;
+	top:1px;
 }
 
 .my-float{
@@ -596,4 +614,8 @@ padding: 5px;
 }
 #sp-footer2 a {
   color: #fff;
+}
+/*menu mobile bold*/
+#sp-mobile-header a {
+  font-weight: bold;
 }
