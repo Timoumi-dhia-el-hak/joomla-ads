@@ -1,5 +1,5 @@
 
-jQuery(function ($) {
+jQuery(document).ready(function () {
     $(window).scroll(function(){
         if ($(this).scrollTop() < 250) {
              $(".float").fadeIn();

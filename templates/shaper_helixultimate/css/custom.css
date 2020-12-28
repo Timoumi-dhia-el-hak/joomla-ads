@@ -581,30 +581,16 @@ padding: 5px;
 	border-radius:5px;
 	text-align:center;
   display: table-cell;
-  -webkit-animation-duration: 1s;
-  animation-duration: 1s;
-  -webkit-animation-fill-mode: both;
-  animation-fill-mode: both;
-  -webkit-animation-delay: 1.5s;
-  -moz-animation-delay: 1.5s;
-  animation-delay: 1.5s;
+  
 }
 #sp-footer2 a.float {
-background: #f3a847;
-transition: all 0.2s ease-out, color 0.2s ease-out;
 border-color: #f3a847;
-text-align: center;
 text-decoration: none;
-border-radius: 10px;
 border: 5px solid #f3a847;
 padding: 5px;
         }
 #sp-footer2 a.float:hover {
 	background-color:#f3a947;
-}
-#sp-footer2 a.float:active {
-	position:relative;
-	top:1px;
 }
 
 .my-float{
