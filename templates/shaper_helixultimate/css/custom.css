@@ -570,18 +570,15 @@ padding: 5px;
 }
 /*flot button*/
 .float{
-	position:fixed;
-	width:150px;
-	height:40px;
+  z-index: 9999;
+  position: fixed !important;
+	width:150px !important;
 	bottom:40px;
-  right: auto;
-  left: auto;
 	background-color:#F3A847;
 	color:#FFF;
-	border-radius:5px;
+	border-radius:5px!important;
 	text-align:center;
-  display: table-cell;
-  
+   
 }
 #sp-footer2 a.float {
 border-color: #f3a847;
@@ -591,10 +588,6 @@ padding: 5px;
         }
 #sp-footer2 a.float:hover {
 	background-color:#f3a947;
-}
-
-.my-float{
-	margin-top:22px;
 }
 .custom{
   display: flex;
