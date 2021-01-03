@@ -88,7 +88,7 @@ $usersConfig = JComponentHelper::getParams('com_users');
 						<?php echo JText::_('COM_USERS_LOGIN_REMIND'); ?>
 					</a>
 					<?php if ($usersConfig->get('allowUserRegistration')) : ?>
-						<a class="list-group-item" href="<?php echo JRoute::_('index.php?option=com_users&view=registration'); ?>">
+						<a class="list-group-item register" href="<?php echo JRoute::_('index.php?option=com_users&view=registration'); ?>">
 							<?php echo JText::_('COM_USERS_LOGIN_REGISTER'); ?>
 						</a>
 					<?php endif; ?>
