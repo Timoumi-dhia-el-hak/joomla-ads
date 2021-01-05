@@ -13,7 +13,9 @@ defined('_JEXEC') or die( 'Restricted access' );
     $linkTarget = TRoute::_( "index.php?option=com_adsmanager&view=details&id=".$content->id."&catid=".$content->catid); ?>
     <!-- <div class="row image_container container">-->
         <div class="adsmanager-grid">
-            <h4 class="no-margin-top"><?php echo "<a href='".$linkTarget."'>".$content->ad_headline."</a>"; ?></h4>
+            <h4 class="no-margin-top"><?php 
+             $short_title=substr($content->ad_headline, 0, 22);
+             echo "<a href='".$linkTarget."'>".$short_title."</a>"; ?></h4>
             <div class="text-center">
                 <!--<img src="templates/ouacheteroutrouver/css/images/gold-ad-1.png"/>-->
                 <?php

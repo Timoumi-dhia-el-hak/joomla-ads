@@ -36,7 +36,9 @@ defined('_JEXEC') or die( 'Restricted access' );
         <div class="adsmanager-grid<?php echo $classcontent; ?>">
             <h4 class="no-margin-top">
                 <?php 
-                    echo "<a href='".$linkTarget."'>".$content->ad_headline."</a>";
+                   /*  echo "<a href='".$linkTarget."'>".$content->ad_headline."</a>"; */
+                    $short_title=substr($content->ad_headline, 0, 22);
+                    echo "<a href='".$linkTarget."'>".$short_title."</a>"; 
                     
                 ?>
             </h4>
