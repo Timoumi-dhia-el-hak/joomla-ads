@@ -602,7 +602,8 @@ border: 5px solid #f3a847;
 padding: 5px;
         }
 #sp-content-top a.float:hover {
-	background-color:#f3a947;
+  background-color:#f3a947;
+  color:#fff ;
 }
 .custom{
   z-index: inherit;
